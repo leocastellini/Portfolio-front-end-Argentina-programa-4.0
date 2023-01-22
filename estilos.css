@@ -9,7 +9,7 @@ body{
 }
 
 
-.grid{
+.grid-header{
     display:grid;
     grid-template-columns: repeat(12,1fr);
     width:90%;
@@ -60,7 +60,7 @@ body{
     padding: 30px;
   }
    .menu{
-    font-size: 20px;
+    font-size: 26px;
    }
   
 
@@ -97,6 +97,18 @@ body{
 }
 
 /* Encabezado - Header */
+.grid-biografia{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    width:90%;
+    max-width:1000px;
+    height:100%;
+    margin:auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
 
 .biografia{
     height:370px;
@@ -143,6 +155,18 @@ body{
     color: #fff;
     height:auto;
     padding-bottom: 60px;
+}
+
+.grid-hobbies{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    width:90%;
+    max-width:1100px;
+    height:100%;
+    margin:auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
 }
 
 .textos-about-me{
@@ -220,8 +244,9 @@ transform: scale(1.5);
 
 /*Mision - Mission*/
 
-.ubicacion{   /*es la mission grid para que aplique rejillas*/
-    display: grid;  
+.ubicacion{   
+    display: grid;
+    align-items: center;  
     padding: 40px 0;
 
 }
@@ -229,7 +254,8 @@ transform: scale(1.5);
      
      grid-column: 7/13;
      grid-row: 1/-1;
-     margin-bottom: 20px;
+     margin: auto;
+     padding: 140px;
 }
 
 
@@ -237,9 +263,10 @@ transform: scale(1.5);
 
 /*much style for contact */
 .form-contacto{
-    margin-left: 200px;
-    grid-column-start: 1/4;
-     
+    margin: auto;
+    grid-column-start: 3/6;
+    padding: 140px; 
+    border: none;
   }
 
 .field {
@@ -304,7 +331,7 @@ footer{
  transform: scale(1.5);
  }
 
-[class^="footer-item"] a{/*clases con almenos footer-item*/
+[class^="footer-item"] a{/*clases con al menos footer-item*/
      color:#fff;
      font-size: 30px;    
 }
@@ -314,13 +341,96 @@ footer{
 }
 
 
-@media screen and (max-width){
-    .img{
-        max-width: 180px;
+@media screen and (max-width:760px){
+    /*.grid{
+        grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+       }*/
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .textos-hero{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
     .grid{
-     grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+        width:90%;
+        height:200px;
+        font-size: 10px;
     }
+ 
+    .Perfil{
+        width:80%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    main{
+        
+        width: 100%;
+    }
+    section{
+        flex-direction: column;
+    }
+    
+    .items{
+        width: 90%;
+        
+    }
+
+    #about-me{
+        width:80;
+        font-size: 12px;
+    }
+
+    .about-me{
+        
+        width:100%;
+       display:flex;
+       flex-flow: wrap-reverse;
+    }
+
+    .grid-hobbies{
+        width:100%;
+        flex-direction: column;
+    }
+
+    .textos-about-me{
+        width:100%;
+        font-size:10px;
+        
+    }
+    .cards{
+        width:60%;
+        font-size: 10px;
+        margin-left: 60px;
+        
+    }
+
+    .ubicacion{
+        width:100%;
+        height: 30%;
+        display: inline-block;
+        align-items: center;
+        
+    }
+    
+    #mapa{
+        width: 80%;
+        margin: 12px;
+        
+    }
+     .form-contacto{
+        width:80%;
+        margin: 12px;
+
+     }
+
+     
+
 
 }
-
