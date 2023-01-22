@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!---lista de link para diseños por las dudas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  
+   <!---formulario contact online leo-->
+     <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+     <script type="text/javascript">
+      emailjs.init('4BPo2fIytTTlXRZMi');
+     </script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="nav-bar">
+        <nav class="navs">
+            <a href="#about-me" class="menu">Sobre mi</a>
+            
+            
+            <a href="#contacto" class="menu">Contacto</a>
+        
+        
+        </nav>
+        </div>
+        
+        <div class="grid">
+           
+            <div class="textos-hero">
+                <h1 class="weigth-600">
+                   ¡ Hola ! Mi nombre es <span class="weigth-400"> Leonardo.</span>
+                </h1>
+                <p class="parrafo">Hago diseños creativos para que la gente sea feliz.</p>
+                <a href="#MellegaElTexto" class="cta">Contactame</a>
+
+            </div>
+            <div class="Perfil">
+                <img class="img" src="/imagenes/100_1607leo.png" >
+            </div>
+          
+        </div>
+    </header>
+     <main>
+        <section class="biografia">
+            <section class="grid">
+        <div class="items">
+             
+              <p class="item" id="about-me">Vivo en Buenos aires, Argentina. Actualmente recibo formación universitaria, me encuentro incursionando en la comunidad de kaggle, Rstudio y Tableu 
+                para análisis de datos. Incorporó formación en diseño de experiencia de usuario.
+                También poseo algunos proyectos web realizados y presentes en mi cuenta de repositorios de Github.  
+              </p>
+
+                
+        </div>
+            </section>
+        </section>
+        
+        <section class="about-me" >
+            <div class="grid">
+                <div class="textos-about-me">
+                    <h2  class="subtitulo">Sobre mi</h2>
+                     <p class="parrafo">Mis hobbies son correr, ver series, leer, viajar, escuchar música</p>
+                </div>
+                <div class="cards">
+
+                    <div class="card">
+                        <img src="/imagenes/corriendo_1.png"  class="correr">
+                        <p class="parrafo-card">correr</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/imagenes/monitor-de-tv.png" class="series" >
+                        <p class="parrafo-card">series</p>
+                    </div>
+
+                    <div class="card">
+                       <img src="/imagenes/libro.png" class="leer"> 
+                        <p class="parrafo-card">leer</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/imagenes/avion.png" class="viajar">
+                        <p class="parrafo-card">viajar</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="/imagenes/auricular.png" class="musica">
+                        <p class="parrafo-card">música</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <section class="ubicacion">
+
+            
+            <div class="mapa">
+              
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6579.968490559175!2d-58.7961839663442!3d-34.45254780906787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1674317039937!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                
+             </div>
+            
+          
+             
+             <div  id="MellegaElTexto" class="form-contacto">
+                <form id="form">
+                    <div class="field">
+                      <label for="from_name" >Nombre</label>
+                      <input type="text" name="from_name" id="from_name" required placeholder="Nombre">
+                    </div>
+                    
+                    <div class="field">
+                      <label for="message" >Mensaje</label>
+                      <input type="text" name="message" id="message" required placeholder="Mensaje">
+                    </div>
+                    
+                    <div class="field">
+                      <label for="email_id" >Email</label>
+                      <input type="text" name="email_id" id="email_id" required placeholder="Direccion@email.com">
+                    </div>
+                    
+                    <input type="submit" id="button" value="Enviar" >
+                  </form>
+             </div>
+            
+            
+            
+          </section>
+
+     </main>
+
+     
+
+
+     <footer>
+        <div class="grid">
+            <div class="textos-footer">
+                <h2 id="contacto" class="subtitulo">Contactame</h2> 
+            </div>
+           
+         <div class="items">
+
+          <div class="footer-item1"> 
+                <a href="https://github.com/leocastellini" class="contacto">  <i class="fa-brands fa-github"></i></a></div>
+
+          <div class="footer-item2">      
+                <a href="https://www.facebook.com/profile.php?id=100011384098703">  <i class="fa-brands fa-facebook"></i></a></div>
+           
+          <div class="footer-item3">     
+                 <a href="https://wa.me/541162802286" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                
+                </div>
+          
+          <div class="footer-item4">    
+                  <a href="https://www.instagram.com/leocastellini_"> <i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+
+        </div>
+     </footer>
+     
+     
+    <script src="app.js"></script><!---EmailJS bibliografia js-->
+    <!---fontawesome bibliografía iconos-->
+     <script src="https://kit.fontawesome.com/24238069dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

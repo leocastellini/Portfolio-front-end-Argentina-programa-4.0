@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;/* estilo de google fonts*/
+}
+
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    width:90%;
+    max-width:1100px;
+    height:100%;
+    margin:auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.weight-400{
+    font-weight:600;
+}
+
+.parrafo{
+    margin-bottom: 20px;
+}
+
+.header{
+    height:500px;
+    background: linear-gradient(45deg,blue,red,black,green);
+    position: relative;
+    transform: translate(-50,50);
+    animation: color 10s ease infinite;
+ } @keyframes color {
+    0%{background:green}
+    20%{background: lightgreen}
+    40%{background: blue}
+    60%{background: lightblue}
+    80%{background: rgb(218, 218, 103)}
+    100%{background: white}
+    
+ } 
+
+ 
+.nav-bar{
+   display: flex;
+   max-width: 300px;
+   width: 20%;
+   margin-right:30px; 
+   float: right; 
+  }
+ 
+  .menu:hover{
+    background-color: #4460AA;
+    border-radius: 30px;
+    padding: 30px;
+  }
+   .menu{
+    font-size: 26px;
+   }
+  
+
+
+.Perfil{
+    width:100%;
+    height: auto;
+    grid-column: 9/13;    
+}
+
+.img{
+    width: 95%;
+    max-width: 300px;
+    border-radius: 300px;
+}
+
+.textos-hero{
+    grid-column: 1/7;
+    padding-right: 20px;
+}
+
+.texto-hero p{
+    text-align: justify;
+}
+.cta{
+    width:130px;
+    background: black;
+    color:#fff;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+
+}
+
+/* Encabezado - Header */
+
+.biografia{
+    height:370px;
+    background:linear-gradient(180deg, #fff 50%, black 50%);
+}
+
+.items{
+    grid-column: 1/-1;
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.item{
+    width:90%;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,00.5);
+    overflow:hidden;
+    height: 220px;
+    padding: 30px 10px; 
+    text-align: center; 
+    font-size: 26px;
+}
+
+/*[class^="far fa"]{/*edita todas las clases far fa
+       font-size: 80px;
+       text-align:center;
+
+}*/
+
+/*.titulo-services{
+    margin: 20px 0;
+}*/
+
+/*Sobre mi - About us*/
+
+.about-me{
+    background: black;
+    color: #fff;
+    height:auto;
+    padding-bottom: 60px;
+}
+
+.textos-about-me{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.textos-about-me .parrafo-card{
+    margin-top: 10px;
+    color: #ccc;
+
+}
+
+.cards{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+ 
+
+.card img{
+   width: 100%;
+   transition: all 300ms;
+   position: relative;
+}
+
+.card img:hover{
+transform: scale(1.5);
+}
+
+.card .parrafo-card{
+    text-align: center;
+}
+
+.correr{
+    background-color: white;
+    height: 90px;
+    border-radius: 20px;
+    
+}
+
+.series{
+    background-color: white;
+    height: 90px;
+    border-radius: 20px;
+}
+
+.leer{
+    background-color: white;
+    height: 90px;
+    border-radius: 20px;
+}
+
+.viajar{
+    background-color: white;
+    height: 90px;
+    border-radius: 20px;
+}
+
+.musica{
+    background-color: white;
+    height: 90px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*Mision - Mission*/
+
+.ubicacion{   /*es la mission grid para que aplique rejillas*/
+    display: grid;  
+    padding: 40px 0;
+
+}
+.mapa {
+     
+     grid-column: 7/13;
+     grid-row: 1/-1;
+     margin-bottom: 20px;
+}
+
+
+
+
+/*much style for contact */
+.form-contacto{
+    margin-left: 200px;
+    grid-column-start: 1/4;
+     
+  }
+
+.field {
+    margin-bottom: 20px;
+    
+  }
+  
+  .field label {
+    display: block;
+    font-size: 18px;
+    color: #777;
+    
+  }
+  
+  
+  .field input {
+    display: block;
+    min-width: 350px;
+    line-height: 2.5;
+    font-size: 14px;
+    
+    
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin-left: 120px;
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none;
+  }
+
+  
+
+
+/*Pie de página - footer */
+
+footer{
+ background: black;
+ color:#fff;
+ text-align: center;
+ padding: 60px 0;
+ transition: all;
+ position: relative;
+}
+
+
+
+.textos-footer{
+    grid-column: 1/-1;
+}
+
+.items i{
+    width: 95%;
+    transition: all 300ms;
+    position: relative;
+ }
+ 
+ .items i:hover{
+ transform: scale(1.5);
+ }
+
+[class^="footer-item"] a{/*clases con almenos footer-item*/
+     color:#fff;
+     font-size: 30px;    
+}
+
+[class^="footer-item"]{
+    grid-column: span 3;
+}
+
+
+@media screen and (max-width){
+    .img{
+        max-width: 180px;
+    }
+    .grid{
+     grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    }
+
+}
+
