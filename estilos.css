@@ -60,7 +60,7 @@ body{
     padding: 30px;
   }
    .menu{
-    font-size: 26px;
+    font-size: 20px;
    }
   
 
@@ -220,7 +220,7 @@ transform: scale(1.5);
 
 /*Mision - Mission*/
 
-.ubicacion{   /*es la mission grid para que aplique rejillas*/
+.ubicacion{   
     display: grid;  
     padding: 40px 0;
 
@@ -304,7 +304,7 @@ footer{
  transform: scale(1.5);
  }
 
-[class^="footer-item"] a{/*clases con almenos footer-item*/
+[class^="footer-item"] a{/*clases con al menos footer-item*/
      color:#fff;
      font-size: 30px;    
 }
