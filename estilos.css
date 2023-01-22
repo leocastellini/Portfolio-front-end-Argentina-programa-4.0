@@ -61,6 +61,7 @@ body{
   }
    .menu{
     font-size: 20px;
+    text-decoration: none;
    }
   
 
@@ -245,7 +246,8 @@ transform: scale(1.5);
 /*Mision - Mission*/
 
 .ubicacion{   
-    display: grid;  
+    display: grid;
+    align-items: center;  
     padding: 40px 0;
 
 }
@@ -253,7 +255,8 @@ transform: scale(1.5);
      
      grid-column: 7/13;
      grid-row: 1/-1;
-     margin-bottom: 20px;
+     margin: auto;
+     padding: 140px;
 }
 
 
@@ -261,9 +264,10 @@ transform: scale(1.5);
 
 /*much style for contact */
 .form-contacto{
-    margin-left: 200px;
-    grid-column-start: 1/4;
-     
+    margin: auto;
+    grid-column-start: 3/6;
+    padding: 140px; 
+    border: none;
   }
 
 .field {
@@ -410,6 +414,7 @@ footer{
 
     .ubicacion{
         width:100%;
+        height: 30%;
         display: inline-block;
         align-items: center;
         
