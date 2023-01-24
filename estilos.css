@@ -60,7 +60,7 @@ body{
     padding: 30px;
   }
    .menu{
-    font-size: 26px;
+    font-size: 20px;
    }
   
 
@@ -376,62 +376,10 @@ footer{
     section{
         flex-direction: column;
     }
-    
-    .items{
-        width: 90%;
-        
-    }
 
-    #about-me{
-        width:80;
-        font-size: 12px;
-    }
-
-    .about-me{
-        
-        width:100%;
-       display:flex;
-       flex-flow: wrap-reverse;
-    }
-
-    .grid-hobbies{
-        width:100%;
-        flex-direction: column;
-    }
-
-    .textos-about-me{
-        width:100%;
-        font-size:10px;
-        
-    }
-    .cards{
-        width:60%;
-        font-size: 10px;
-        margin-left: 60px;
-        
-    }
-
-    .ubicacion{
-        width:100%;
-        height: 30%;
-        display: inline-block;
-        align-items: center;
-        
-    }
-    
-    #mapa{
-        width: 80%;
-        margin: 12px;
-        
-    }
-     .form-contacto{
-        width:80%;
-        margin: 12px;
-
-     }
+}
 
      
 
 
 }
-
